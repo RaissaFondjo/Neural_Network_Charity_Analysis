@@ -6,28 +6,29 @@ Using our knowledge about neural networks and deep learning models, we created a
 ## Results
 ### Data Preprocessing
 
-What variable(s) are considered the target(s) for your model?
+* What variable(s) are considered the target(s) for your model?
 
 target is 'IS_SUCCESSFUL' column
 
-What variable(s) are considered to be the features for your model?
+* What variable(s) are considered to be the features for your model?
 
 features are all the other columns except 'IS_SUCCESSFUL' columns and the columns we dropped ('EIN', 'NAME','STATUS')
 
-What variable(s) are neither targets nor features, and should be removed from the input data?
+* What variable(s) are neither targets nor features, and should be removed from the input data?
 
 Columns that don't contribute to the target or the noisy variables; in this case, they are 'EIN', 'NAME','STATUS'
 
 ### Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 I started with only 2 layers (10:5 neurons) and eventually increased to 3 hidden layers(80:50:20) and 1 output layer by trial and errors.
 
-Were you able to achieve the target model performance?
+* Were you able to achieve the target model performance?
 
 No
-What steps did you take to try and increase model performance?
+
+* What steps did you take to try and increase model performance?
 
 I dropped another column('STATUS), binned 'AFFLICATION' column, changed 'Classification counts', added a third hidden layer, changed the number of neurons in each layer, changed activation function from sigmoid to tanh
 
