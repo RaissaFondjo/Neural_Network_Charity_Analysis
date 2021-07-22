@@ -9,9 +9,11 @@ Using our knowledge about neural networks and deep learning models, we created a
 What variable(s) are considered the target(s) for your model?
 
 target is 'IS_SUCCESSFUL' column
+
 What variable(s) are considered to be the features for your model?
 
 features are all the other columns except 'IS_SUCCESSFUL' columns and the columns we dropped ('EIN', 'NAME','STATUS')
+
 What variable(s) are neither targets nor features, and should be removed from the input data?
 
 Columns that don't contribute to the target or the noisy variables; in this case, they are 'EIN', 'NAME','STATUS'
